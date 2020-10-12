@@ -1,6 +1,6 @@
 # Happy web version
-![Image](https://github.com/ladeira1/happy-web/tree/docs/landing-web.png)
-![Image](https://github.com/ladeira1/happy-web/tree/docs/app.png)
+![Image](https://github.com/ladeira1/happy-web/tree/main/docs/landing-web.png)
+![Image](https://github.com/ladeira1/happy-web/tree/main/docs/app.png)
 
 ## About this project
 This project is being developed at the NextLevelWeek #3, organized by [RocketSeat](https://rocketseat.com.br/). It is an app that intends to help find near orphanages to visit.

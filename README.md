@@ -1,7 +1,7 @@
 # Happy web version
 <p align = 'center'>
-  <img src="https://github.com/ladeira1/happy-web/blob/main/docs/landing-web.png?raw=true" alt="Logo" width="700">
-  <img src="https://github.com/ladeira1/happy-web/blob/main/docs/app-web.png?raw=true" alt="Logo" width="700">
+  <img src="https://github.com/ladeira1/happy-web/blob/main/docs/landing-web.png?raw=true" alt="Logo" width="800">
+  <img src="https://github.com/ladeira1/happy-web/blob/main/docs/app-web.png?raw=true" alt="Logo" width="800">
 </p>
 
 ## About this project

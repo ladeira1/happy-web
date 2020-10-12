@@ -1,4 +1,8 @@
 # Happy web version
+<p align = 'center'>
+  <img src="https://github.com/ladeira1/happy-web/blob/main/docs/landing-web.png?raw=true" alt="Logo" width="210">
+  <img src="https://github.com/ladeira1/happy-web/blob/main/docs/landing-web.png?raw=true" alt="Logo" width="210">
+</P>
 ![Image](https://github.com/ladeira1/happy-web/tree/main/docs/landing-web.png?raw=true)
 ![Image](https://github.com/ladeira1/happy-web/tree/main/docs/app.png?raw=true)
 

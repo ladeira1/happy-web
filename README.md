@@ -2,6 +2,11 @@
 <p align = 'center'>
   <img src="https://github.com/ladeira1/happy-web/blob/main/docs/landing-web.png?raw=true" alt="Logo" width="800">
   <img src="https://github.com/ladeira1/happy-web/blob/main/docs/app-web.png?raw=true" alt="Logo" width="800">
+  <img src="https://github.com/ladeira1/happy-web/blob/main/docs/app-web-marker.png?raw=true" alt="Logo" width="800">
+  <img src="https://github.com/ladeira1/happy-web/blob/main/docs/create-orphanage.png?raw=true" alt="Logo" width="800">
+  <img src="https://github.com/ladeira1/happy-web/blob/main/docs/create-orphanage2.png?raw=true" alt="Logo" width="800">
+  <img src="https://github.com/ladeira1/happy-web/blob/main/docs/orphanage.png?raw=true" alt="Logo" width="800">
+  <img src="https://github.com/ladeira1/happy-web/blob/main/docs/orphanage2.png?raw=true" alt="Logo" width="800">
 </p>
 
 ## About this project
@@ -45,6 +50,7 @@ $ npm start
 - [React-Router-Dom](https://reactrouter.com/web/guides/quick-start) - Routes
 - [React-Icons](https://react-icons.github.io/react-icons/) - Icons
 - [React-Leaflet](https://react-leaflet.js.org/) - Map
+- [Axios](https://github.com/axios/axios) - Server connection
 
 ## Contacts
 <a href="https://github.com/ladeira1"><img src="https://cdn.iconscout.com/icon/free/png-512/github-153-675523.png" width="30"></a> | <a href="https://www.linkedin.com/in/victor-ladeira-26940a1b8/"><img src="https://image.flaticon.com/icons/png/512/174/174857.png" width="30"></a> | <a href="mailto:victorladeirag@gmail.com"><img src="https://image.flaticon.com/icons/png/512/281/281769.png" width="30"></a>

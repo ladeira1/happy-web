@@ -10,8 +10,8 @@
 </p>
 
 ## About this project
-This project is being developed at the NextLevelWeek #3, organized by [RocketSeat](https://rocketseat.com.br/). It is an app that intends to help find near orphanages to visit.
-This project is divided in three repositories (web, mobile and backend).
+This project is being developed at the NextLevelWeek #3, organized by [Rocketseat](https://rocketseat.com.br/). It is an app that intends to help find near orphanages to visit.
+This project is divided in three repositories (web, [mobile](https://github.com/ladeira1/happy-mobile) and [backend](https://github.com/ladeira1/happy-server)).
 
 ## Getting Started
 ### Prerequisites

@@ -32,10 +32,11 @@ _or_
 $ yarn
 ```
 
-### Running
 #### Dependencies
 For the project to run, you'll need to have a .env file containing your token access to [mapbox](https://www.mapbox.com/), like this one:
 REACT_APP_MAPBOX_TOKEN=<YOUR_TOKEN>
+
+### Running
 
 ```
 $ yarn start

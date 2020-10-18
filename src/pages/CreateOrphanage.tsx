@@ -1,4 +1,4 @@
-import React, { ChangeEvent, FormEvent, useState } from "react";
+import React, { ChangeEvent, FormEvent, useEffect, useState } from "react";
 import { Map, Marker, TileLayer } from 'react-leaflet';
 import {LeafletMouseEvent} from 'leaflet'
 
@@ -10,8 +10,10 @@ import mapIcon from "../utils/mapIcons";
 import api from "../services/api";
 import { useHistory } from "react-router-dom";
 
-export default function CreateOrphanage() {
+export default function CreateOrphanage(props: any) {
   const history = useHistory();
+  const [lat, setLat] = useState(0)
+  const [lon, setLon] = useState(0)
 
   const [position, setPosition] = useState({latitude: 0, longitude: 0})
   const [name, setName] = useState('');
@@ -66,6 +68,19 @@ export default function CreateOrphanage() {
     history.push('/app');
   }
 
+  useEffect(() => {
+    const getUserLocation = async () => {
+      navigator.geolocation.getCurrentPosition((location) => {
+        const { latitude, longitude } = location.coords
+        setLat(latitude)
+        setLon(longitude)
+      })
+    }
+
+    getUserLocation()
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
     <div id="page-create-orphanage">
       <Sidebar />
@@ -76,7 +91,7 @@ export default function CreateOrphanage() {
             <legend>Dados</legend>
 
             <Map 
-              center={[-22.5287684,-41.9497841]} 
+              center={[lat, lon]} 
               style={{ width: '100%', height: 280 }}
               zoom={15}
               onClick = {handleMapClick}

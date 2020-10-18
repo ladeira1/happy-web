@@ -18,11 +18,24 @@ interface Orphanage {
 
 function OrphanagesMap() {
   const [orphanages, setOrphanages] = useState<Orphanage[]>([])
+  const [lat, setLat] = useState(0)
+  const [lon, setLon] = useState(0)
 
   useEffect(() => {
     api.get('orphanages').then(res => {
       setOrphanages(res.data);
     });
+
+    const getUserLocation = async () => {
+      navigator.geolocation.getCurrentPosition((location) => {
+        const { latitude, longitude } = location.coords
+        setLat(latitude)
+        setLon(longitude)
+      })
+    }
+
+    getUserLocation()
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -41,7 +54,7 @@ function OrphanagesMap() {
       </aside>
 
       <Map
-      center={[-22.5287684,-41.9497841]} 
+      center={[lat, lon]} 
       zoom={15} 
       style={{
         width: '100%',
@@ -58,7 +71,7 @@ function OrphanagesMap() {
             position = {[orphanage.latitude, orphanage.longitude]}>
               <Popup closeButton = {false} minWidth = {240} maxWidth = {240} className="map-popup">
                 {orphanage.name}
-                <Link to = {`/orphanages/${orphanage.id}`}>
+                <Link to = {`/orphanages/${orphanage.id}`}  > 
                   <FiArrowRight size = {20} color = '#fff' />
                 </Link>
               </Popup>
